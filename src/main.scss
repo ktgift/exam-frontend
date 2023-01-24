@@ -1,3 +1,7 @@
+* {
+  font-family: "Prompt", sans-serif;
+}
+
 body {
   margin: 0;
   font-family: "Prompt", sans-serif;
@@ -22,4 +26,62 @@ body,
   background-color: white;
   border-radius: 20px;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 37px;
+  color: #383838;
+}
+
+button {
+  color: #ffffff;
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #c41417 0%,
+    #b31315 100%
+  );
+  border: 1px solid #b31315;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 28px;
+}
+
+.textButton {
+  color: #6f6f6f;
+}
+
+.textButton:hover {
+  color: #c41417;
+}
+
+input {
+  height: 60px;
+  color: #4e4e4e;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  font-size: 34px;
+}
+
+.background {
+  background-image: url("./assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 8px;
+  width: 100vw;
+}
+
+.imgLogo {
+  width: calc(1/5 * 100%);
 }
