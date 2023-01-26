@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import MainLayout from "../components.js/MainLayout";
+import MainLayout from "../components/MainLayout";
 
 export default function Home() {
   const [name, setName] = useState("");

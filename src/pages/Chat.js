@@ -1,4 +1,4 @@
-import MainLayout from "../components.js/MainLayout";
+import MainLayout from "../components/MainLayout";
 
 export default function Chat() {
   const roomname = localStorage.getItem("room");

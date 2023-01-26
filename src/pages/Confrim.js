@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import MainLayout from "../components.js/MainLayout";
+import MainLayout from "../components/MainLayout";
 
 export default function Confrim() {
   const [roomname, setRoomname] = useState("");
