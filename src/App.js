@@ -1,17 +1,16 @@
 import React from "react";
-import logo from "./assets/images/logo.png";
+import { Route, Routes } from "react-router-dom";
+import Chat from "./pages/Chat";
+import Confrim from "./pages/Confrim";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="app background">
-      <div className="logo">
-        <img className="imgLogo" src={logo} alt="logo" />
-      </div>
-      <div className="container">
-        <p className="title">ชื่อของคุณ</p>
-        <input />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/confrim" element={<Confrim />} />
+      <Route path="/chat" element={<Chat />} />
+    </Routes>
   );
 };
 
